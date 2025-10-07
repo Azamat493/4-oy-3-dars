@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-[#000]">
+    <header
+      class="bg-black sticky top-0 z-[999] max-w-[1440px] mx-auto w-full text-white py-6 px-8 flex items-center justify-around"
+    >
+      <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
+      <div class="flex items-center gap-8">
+        <a href="./index.html">
+          <img src="./images/IMAGE.png" alt="Logo" />
+        </a>
+        <nav class="hidden md:flex gap-6">
+          <a href="#" class="hover:underline font-family">Wave NFTs</a>
+          <a href="#" class="hover:underline font-family">Stories</a>
+          <a href="#" class="hover:underline font-family">Contact</a>
+        </nav>
+      </div>
+      <div class="flex">
+        <div class="sm:flex hidden gap-4">
+          <a
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame.png" alt="Twitter" />
+          </a>
+          <a
+            href="https://discord.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (1).png" alt="Discord" />
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (2).png" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/Tolko_Nenado"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (3).png" alt="Telegram" />
+          </a>
+        </div>
+        <label
+          for="mobile-menu-toggle"
+          class="md:hidden cursor-pointer ml-4 text-white"
+        >
+          <i class="fa-solid fa-bars text-[35px]"></i>
+        </label>
+      </div>
+      <div
+        class="fixed top-0 right-0 h-full w-1/2 bg-[#282626] z-50 flex flex-col items-start p-8 space-y-8 translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out"
+      >
+        <label
+          for="mobile-menu-toggle"
+          class="self-end cursor-pointer text-white text-2xl mb-2"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <nav class="flex flex-col gap-6">
+          <a href="#" class="hover:underline font-family">Wave NFTs</a>
+          <a href="#" class="hover:underline font-family">Stories</a>
+          <a href="#" class="hover:underline font-family">Contact</a>
+        </nav>
+        <div class="flex flex-wrap gap-4 mt-4 sm:hidden">
+          <a
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame.png" alt="Twitter" />
+          </a>
+          <a
+            href="https://discord.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (1).png" alt="Discord" />
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (2).png" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/Tolko_Nenado"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (3).png" alt="Telegram" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        data-aos="fade-up"
+        class="bg-black max-w-[1440px] mx-auto w-[90%] text-white py-20 px-8 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="md:w-1/2 space-y-6">
+          <h2
+            class="text-4xl md:text-5xl font-bold font-second-family leading-tight"
+          >
+            META RECORD<br />
+            LABEL
+          </h2>
+          <p class="text-sm md:text-base font-third-family max-w-md">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+          <button
+            class="mt-6 cursor-pointer bg-[#8dfd1b] hover:bg-green-600 text-black font-bold py-3 px-6 rounded transition-colors duration-300 font-family"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="md:w-1/2 relative flex justify-center">
+          <img src="./images/IMAGE (1).png" alt="" />
+        </div>
+      </section>
+      <section
+        class="bg-black max-w-[1440px] mx-auto w-[90%] text-white py-20 px-8 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div data-aos="fade-up" class="md:w-1/2 space-y-6">
+          <h2
+            class="text-3xl md:text-4xl font-bold font-second-family leading-tight"
+          >
+            WAVE NFT<br />
+            <span class="text-[#a8a8a8]"
+              >COLLECTION OF<br />
+              777</span
+            >
+          </h2>
+          <div class="relative mt-8 w-full max-w-[300px]">
+            <img
+              src="./images/IMAGE (2).png"
+              alt="WAVE NFT"
+              class="w-full h-auto rounded-lg shadow-2xl"
+            />
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="md:w-1/2 space-y-6"
+        >
+          <div class="border-l-4 border-[#8dfd1b] pl-4">
+            <p class="text-lg md:text-xl font-family text-[#8dfd1b]">
+              META WAVE NFT is your pass to Meta Record Label ecosystem. It is
+              your access to our industry experts, established artists, and
+              partners.
+            </p>
+          </div>
+          <div class="space-y-4 text-sm md:text-base font-third-family">
+            <p>
+              Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet
+              dictum sit amet justo. Tortor aliquam nulla facilisi cras.
+            </p>
+            <p>
+              Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur
+              adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed
+              felis. Aenean vel elit scelerisque mauris pellentesque pulvinar.
+              Et malesuada fames ac turpis egestas sed tempus. Enim sit amet
+              venenatis urna cursus eget.
+            </p>
+            <p>
+              Maecenas ultricies mi eget mauris pharetra et ultrices. A
+              condimentum vitae sapien pellentesque habitant morbi.
+            </p>
+          </div>
+          <button
+            class="mt-6 border-2 cursor-pointer border-[#8dfd1b] text-[#fff] hover:bg-green-500 hover:text-black font-bold py-3 px-6 rounded transition-colors duration-300 font-[var(--third-family)]"
+          >
+            Get One On OpenSea
+          </button>
+        </div>
+      </section>
+      <section data-aos="fade-left" class="max-w-[1440px] mx-auto w-full">
+        <div
+          class="p-[0_20px_0_20px] flex horizontal-scroll gap-[200px] overflow-x-auto overflow-y-hidden whitespace-nowrap"
+        >
+          <h1
+            class="font-normal text-[79px] leading-[111%] uppercase text-white font-second-family"
+          >
+            Artists
+          </h1>
+          <h1
+            class="font-normal text-[79px] leading-[111%] uppercase text-white font-second-family"
+          >
+            Artists
+          </h1>
+          <h1
+            class="font-normal text-[79px] leading-[111%] uppercase text-white font-second-family"
+          >
+            Artists
+          </h1>
+          <h1
+            class="font-normal text-[79px] leading-[111%] uppercase text-white font-second-family"
+          >
+            Artists
+          </h1>
+        </div>
+      </section>
+      <section
+        class="bg-black max-w-[1440px] mx-auto w-[90%] text-white py-24 px-8"
+      >
+        <div class="">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              <img
+                src="./images/Frame (4).png"
+                alt="Mark Popson"
+                class="w-full h-auto rounded-lg object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+              />
+              <p class="text-sm md:text-base font-family">Mark Popson</p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="./images/Frame (5).png"
+                alt="Pete Bentz"
+                class="w-full h-auto rounded-lg object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+              />
+              <p class="text-sm md:text-base font-family">Pete Bentz</p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img
+                src="./images/Frame (6).png"
+                alt="Daniela Youth"
+                class="w-full h-auto rounded-lg object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+              />
+              <p class="text-sm md:text-base font-family">Daniela Youth</p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <img
+                src="./images/Frame (7).png"
+                alt="Roman Gore"
+                class="w-full h-auto rounded-lg object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+              />
+              <p class="text-sm md:text-base font-family">Roman Gore</p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <img
+                src="./images/Frame (8).png"
+                alt="Tonya"
+                class="w-full h-auto rounded-lg object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+              />
+              <p class="text-sm md:text-base font-family">Tonya</p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <img
+                src="./images/Frame (9).png"
+                alt="Ivor"
+                class="w-full h-auto rounded-lg object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+              />
+              <p class="text-sm md:text-base font-family">Ivor</p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-3"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <img
+                src="./images/Frame (10).png"
+                alt="Somae Petit"
+                class="w-full h-auto rounded-lg object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+              />
+              <p class="text-sm md:text-base font-family">Somae Petit</p>
+            </div>
+            <div class="hidden md:block"></div>
+          </div>
+        </div>
+      </section>
+      <section data-aos="fade-up" class="bg-black text-white py-24 px-8">
+        <div class="max-w-[1440px] mx-auto">
+          <h2
+            class="text-3xl md:text-4xl font-bold font-second-family mb-12 text-center"
+          >
+            MRL.<span class="text-[#a8a8a8]">THE STORY.</span>
+          </h2>
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/4 p-6 rounded-lg">
+              <nav class="space-y-4">
+                <a
+                  href="#"
+                  class="w-[282px] h-[72px] pl-[20px] bg-transparent text-white font-family flex items-center justify-start rounded-lg transition-colors duration-300 hover:bg-[#222] hover:text-[#8dfd1b]"
+                  >Our founders</a
+                >
+                <a
+                  href="#"
+                  class="w-[282px] h-[72px] pl-[20px] bg-transparent text-white font-family flex items-center justify-start rounded-lg transition-colors duration-300 hover:bg-[#222] hover:text-[#8dfd1b]"
+                  >Partners</a
+                >
+                <a
+                  href="#"
+                  class="w-[282px] h-[72px] pl-[20px] bg-transparent text-white font-family flex items-center justify-start rounded-lg transition-colors duration-300 hover:bg-[#222] hover:text-[#8dfd1b]"
+                  >The future</a
+                >
+              </nav>
+            </div>
+            <div
+              class="md:w-3/4 bg-[#222] p-8 rounded-lg flex flex-col md:flex-row gap-8 items-center md:items-start"
+            >
+              <img
+                src="./images/IMAGE (3).png"
+                alt="Founders"
+                class="w-[50%] md:w-1/3 h-auto rounded-lg object-cover"
+              />
+              <div class="flex-1 space-y-4">
+                <div class="border-l-4 border-[#8dfd1b] pl-4">
+                  <p class="text-lg md:text-xl font-family text-[#8dfd1b]">
+                    META record label was founded by Shaky Lake and Baky Hike in
+                    2020 business accelerator.
+                  </p>
+                </div>
+                <div
+                  class="text-sm md:text-base text-[#fff] font-third-family space-y-4"
+                >
+                  <p>
+                    Hac habitasse platea dictumst vestibulum rhoncus est. Sit
+                    amet dictum sit amet justo. Tortor aliquam nulla facilisi
+                    cras.
+                  </p>
+                  <p>
+                    Maecenas ultricies mi eget mauris pharetra. Sit amet
+                    consectetur adipiscing elit ut aliquam purus. Porta nibh
+                    venenatis cras sed felis. Aenean vel elit scelerisque mauris
+                    pellentesque pulvinar. Et malesuada fames ac turpis egestas
+                    sed tempus. Enim sit amet venenatis urna cursus eget.
+                  </p>
+                  <p>
+                    Maecenas ultricies mi eget mauris pharetra et ultrices. A
+                    condimentum vitae sapien pellentesque habitant morbi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="relative max-w-[1440px] w-full mx-auto bg-black text-white overflow-hidden py-24 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="absolute top-0 left-0 right-0 h-32 sm:h-40 lg:h-48 z-0">
+          <img
+            src="./images/IMAGE (4).png"
+            alt="Banner"
+            class="w-full h-full object-cover grayscale opacity-70"
+          />
+        </div>
+        <div class="relative z-10 mt-[80px] sm:mt-[120px] lg:mt-[160px]">
+          <h2
+            class="text-center text-2xl sm:text-3xl lg:text-4xl font-second-family font-bold mb-12 tracking-wider uppercase"
+          >
+            ROADMAP
+          </h2>
+          <div class="relative max-w-4xl mx-auto">
+            <svg
+              width="672"
+              height="672"
+              viewBox="0 0 672 672"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute -top-40 -left-40 sm:-top-52 sm:-left-52 w-[500px] sm:w-[672px] animate-pulse opacity-30"
+            >
+              <g clip-path="url(#clip0_1_625)">
+                <path
+                  d="M336 385.5C363.338 385.5 385.5 363.338 385.5 336C385.5 308.662 363.338 286.5 336 286.5C308.662 286.5 286.5 308.662 286.5 336C286.5 363.338 308.662 385.5 336 385.5Z"
+                  stroke="#8DFD1B"
+                />
+                <path
+                  d="M336.5 415.5C380.683 415.5 416.5 379.683 416.5 335.5C416.5 291.317 380.683 255.5 336.5 255.5C292.317 255.5 256.5 291.317 256.5 335.5C256.5 379.683 292.317 415.5 336.5 415.5Z"
+                  stroke="#8DFD1B"
+                />
+                <path
+                  d="M335.605 464.71C406.908 464.71 464.71 406.908 464.71 335.605C464.71 264.302 406.908 206.5 335.605 206.5C264.302 206.5 206.5 264.302 206.5 335.605C206.5 406.908 264.302 464.71 335.605 464.71Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.75"
+                />
+                <path
+                  d="M335.664 543.828C450.63 543.828 543.828 450.63 543.828 335.664C543.828 220.698 450.63 127.5 335.664 127.5C220.698 127.5 127.5 220.698 127.5 335.664C127.5 450.63 220.698 543.828 335.664 543.828Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.5"
+                />
+                <path
+                  d="M335.951 671.402C521.215 671.402 671.402 521.215 671.402 335.951C671.402 150.687 521.215 0.5 335.951 0.5C150.687 0.5 0.5 150.687 0.5 335.951C0.5 521.215 150.687 671.402 335.951 671.402Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.25"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_625">
+                  <rect width="672" height="672" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              width="672"
+              height="672"
+              viewBox="0 0 672 672"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-[20%] -right-[60%] sm:-right-[40%] w-[500px] sm:w-[672px] animate-pulse opacity-30 delay-150"
+            >
+              <g clip-path="url(#clip0_1_625)">
+                <path
+                  d="M336 385.5C363.338 385.5 385.5 363.338 385.5 336C385.5 308.662 363.338 286.5 336 286.5C308.662 286.5 286.5 308.662 286.5 336C286.5 363.338 308.662 385.5 336 385.5Z"
+                  stroke="#8DFD1B"
+                />
+                <path
+                  d="M336.5 415.5C380.683 415.5 416.5 379.683 416.5 335.5C416.5 291.317 380.683 255.5 336.5 255.5C292.317 255.5 256.5 291.317 256.5 335.5C256.5 379.683 292.317 415.5 336.5 415.5Z"
+                  stroke="#8DFD1B"
+                />
+                <path
+                  d="M335.605 464.71C406.908 464.71 464.71 406.908 464.71 335.605C464.71 264.302 406.908 206.5 335.605 206.5C264.302 206.5 206.5 264.302 206.5 335.605C206.5 406.908 264.302 464.71 335.605 464.71Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.75"
+                />
+                <path
+                  d="M335.664 543.828C450.63 543.828 543.828 450.63 543.828 335.664C543.828 220.698 450.63 127.5 335.664 127.5C220.698 127.5 127.5 220.698 127.5 335.664C127.5 450.63 220.698 543.828 335.664 543.828Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.5"
+                />
+                <path
+                  d="M335.951 671.402C521.215 671.402 671.402 521.215 671.402 335.951C671.402 150.687 521.215 0.5 335.951 0.5C150.687 0.5 0.5 150.687 0.5 335.951C0.5 521.215 150.687 671.402 335.951 671.402Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.25"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_625">
+                  <rect width="672" height="672" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg
+              width="672"
+              height="672"
+              viewBox="0 0 672 672"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-[90%] left-30 transform -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[672px] animate-pulse opacity-30 delay-150"
+            >
+              <g clip-path="url(#clip0_1_625)">
+                <path
+                  d="M336 385.5C363.338 385.5 385.5 363.338 385.5 336C385.5 308.662 363.338 286.5 336 286.5C308.662 286.5 286.5 308.662 286.5 336C286.5 363.338 308.662 385.5 336 385.5Z"
+                  stroke="#8DFD1B"
+                />
+                <path
+                  d="M336.5 415.5C380.683 415.5 416.5 379.683 416.5 335.5C416.5 291.317 380.683 255.5 336.5 255.5C292.317 255.5 256.5 291.317 256.5 335.5C256.5 379.683 292.317 415.5 336.5 415.5Z"
+                  stroke="#8DFD1B"
+                />
+                <path
+                  d="M335.605 464.71C406.908 464.71 464.71 406.908 464.71 335.605C464.71 264.302 406.908 206.5 335.605 206.5C264.302 206.5 206.5 264.302 206.5 335.605C206.5 406.908 264.302 464.71 335.605 464.71Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.75"
+                />
+                <path
+                  d="M335.664 543.828C450.63 543.828 543.828 450.63 543.828 335.664C543.828 220.698 450.63 127.5 335.664 127.5C220.698 127.5 127.5 220.698 127.5 335.664C127.5 450.63 220.698 543.828 335.664 543.828Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.5"
+                />
+                <path
+                  d="M335.951 671.402C521.215 671.402 671.402 521.215 671.402 335.951C671.402 150.687 521.215 0.5 335.951 0.5C150.687 0.5 0.5 150.687 0.5 335.951C0.5 521.215 150.687 671.402 335.951 671.402Z"
+                  stroke="#8DFD1B"
+                  stroke-opacity="0.25"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_625">
+                  <rect width="672" height="672" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <div class="space-y-12 relative">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="0"
+                class="flex flex-col sm:flex-row items-start w-full max-w-4xl mx-auto gap-6 group"
+              >
+                <div
+                  class="bg-[#222] p-6 rounded-lg shadow-lg w-full border-2 border-[#8dfd1b] group-hover:bg-gray-800 transition-colors duration-300"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row border-b-2 pb-2.5 border-[#8dfd1b] items-start gap-5 mb-4"
+                  >
+                    <div
+                      class="flex-shrink-0 font-family flex items-center justify-center w-10 h-10 text-[#8dfd1b] font-bold border-2 border-[#8dfd1b] text-lg transition-colors duration-300 hover:bg-[#8dfd1b] hover:text-[#000]"
+                    >
+                      1
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm text-[#8dfd1b] font-family uppercase tracking-wider"
+                      >
+                        Phase 1 - completed
+                      </h3>
+                      <p
+                        class="font-normal text-base leading-[173%] uppercase text-white font-family mt-1"
+                      >
+                        Spring 2022 - pre launch
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+                  >
+                    <div class="w-full sm:w-[50%]">
+                      <ul
+                        class="space-y-2 text-sm font-third-family text-white"
+                      >
+                        <li>• Website 1.2</li>
+                        <li>• Discord community promotion</li>
+                        <li>• MINTING WAVE NFTs</li>
+                      </ul>
+                      <p
+                        class="font-normal text-[11px] mt-5 leading-[233%] text-white font-third-family"
+                      >
+                        WAVE NFTs will be 100% pre-minted and launched as an
+                        OpenOcean collection
+                      </p>
+                    </div>
+                    <div class="shrink-0">
+                      <img
+                        src="./images/IMAGE (5).png"
+                        alt="Phase 1"
+                        class="w-full max-w-[120px] h-auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="flex flex-col sm:flex-row items-start w-full max-w-4xl mx-auto gap-6 group"
+              >
+                <div
+                  class="bg-[#222] p-6 rounded-lg shadow-lg w-full border-2 border-[#8dfd1b] group-hover:bg-gray-800 transition-colors duration-300"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row border-b-2 pb-2.5 border-[#8dfd1b] items-start gap-5 mb-4"
+                  >
+                    <div
+                      class="flex-shrink-0 font-family flex items-center justify-center w-10 h-10 text-[#8dfd1b] font-bold border-2 border-[#8dfd1b] text-lg transition-colors duration-300 hover:bg-[#8dfd1b] hover:text-[#000]"
+                    >
+                      2
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm text-[#8dfd1b] font-family uppercase tracking-wider"
+                      >
+                        Phase 2
+                      </h3>
+                      <p
+                        class="font-normal text-base leading-[173%] uppercase text-white font-family mt-1"
+                      >
+                        Summer 2022 - GROWTH
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+                  >
+                    <div class="w-full sm:w-[50%]">
+                      <ul
+                        class="space-y-2 text-sm font-third-family text-white"
+                      >
+                        <li>• Hiring for 10 positions in</li>
+                        <li>• Partnerships with main Metaverse players</li>
+                        <li>
+                          • Partnerships with WEB 2.0 music destribution
+                          channels
+                        </li>
+                      </ul>
+                      <p
+                        class="font-normal text-[12px] mt-5 leading-[233%] text-white font-third-family"
+                      >
+                        Onboarding 100 new artists
+                      </p>
+                      <p
+                        class="font-normal text-[11px] mt-5 leading-[233%] text-white font-third-family"
+                      >
+                        META Record Labels is holding the first screening of
+                        aspiring artists from the list of WAVE NFT holders
+                      </p>
+                    </div>
+                    <div class="shrink-0">
+                      <img
+                        src="./images/IMAGE (6).png"
+                        alt="Phase 2"
+                        class="w-full max-w-[120px] h-auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="300"
+                class="flex flex-col sm:flex-row items-start w-full max-w-4xl mx-auto gap-6 group"
+              >
+                <div
+                  class="bg-[#222] p-6 rounded-lg shadow-lg w-full border-2 border-[#8dfd1b] group-hover:bg-gray-800 transition-colors duration-300"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row border-b-2 pb-2.5 border-[#8dfd1b] items-start gap-5 mb-4"
+                  >
+                    <div
+                      class="flex-shrink-0 font-family flex items-center justify-center w-10 h-10 text-[#8dfd1b] font-bold border-2 border-[#8dfd1b] text-lg transition-colors duration-300 hover:bg-[#8dfd1b] hover:text-[#000]"
+                    >
+                      3
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm text-[#8dfd1b] font-family uppercase tracking-wider"
+                      >
+                        Phase 3
+                      </h3>
+                      <p
+                        class="font-normal text-base leading-[173%] uppercase text-white font-family mt-1"
+                      >
+                        Summer 2022 - YOUR new stage
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+                  >
+                    <div class="w-full sm:w-[50%]">
+                      <ul
+                        class="space-y-2 text-sm font-third-family text-white"
+                      >
+                        <li>• Onboarding new partners</li>
+                        <li>• First live concert in Sandjar</li>
+                        <li>• Live concert in Decentrafield</li>
+                      </ul>
+                      <p
+                        class="font-normal text-[11px] mt-5 leading-[233%] text-white font-third-family"
+                      >
+                        We secured dates for our artists to perform in front of
+                        the live audience of Metaverse. Check the concert
+                        schedule in our
+                      </p>
+                    </div>
+                    <div class="shrink-0">
+                      <img
+                        src="./images/IMAGE (7).png"
+                        alt="Phase 3"
+                        class="w-full max-w-[120px] h-auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-24 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 sm:gap-6"
+          >
+            <div class="flex flex-col items-center justify-center p-2 sm:p-4">
+              <div
+                class="relative w-full h-16 bg-gray-800 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+              >
+                <a
+                  href="https://open.spotify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="absolute inset-0 flex items-center justify-center"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg"
+                    alt="Spotify"
+                    class="w-[80%] h-12 object-contain pointer-events-none"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center p-2 sm:p-4">
+              <div
+                class="relative w-full h-16 bg-gray-800 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+              >
+                <a
+                  href="https://soundcloud.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="absolute inset-0 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/images.png"
+                    alt="SoundCloud"
+                    class="w-full h-12 object-contain pointer-events-none"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center p-2 sm:p-4">
+              <div
+                class="relative w-full h-16 bg-gray-800 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+              >
+                <a
+                  href="https://music.apple.com/us/new"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="absolute inset-0 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/channels4_profile.jpg"
+                    alt="Apple Music"
+                    class="w-full h-12 object-contain pointer-events-none"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center p-2 sm:p-4">
+              <div
+                class="relative w-full h-16 bg-gray-800 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+              >
+                <a
+                  href="https://music.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="absolute inset-0 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/images (1).png"
+                    alt="YouTube Music"
+                    class="w-full h-12 object-contain pointer-events-none"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center p-2 sm:p-4">
+              <div
+                class="relative w-full h-16 bg-gray-800 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+              >
+                <a
+                  href="https://discord.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="absolute inset-0 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/images (2).png"
+                    alt="Discord"
+                    class="w-full h-12 object-contain pointer-events-none"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center p-2 sm:p-4">
+              <div
+                class="relative w-full h-16 bg-gray-800 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+              >
+                <a
+                  href="https://x.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="absolute inset-0 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/images (3).png"
+                    alt="X"
+                    class="w-full h-12 object-contain pointer-events-none"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="relative max-w-[1440px] mx-auto w-[90%] bg-black text-white py-24 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div class="flex flex-col space-y-8">
+            <h2
+              class="text-3xl sm:text-4xl font-second-family font-bold uppercase tracking-wider leading-tight"
+            >
+              FREQUENTLY<br /><span class="text-[#a8a8a8]">ASKED</span
+              ><br />QUESTIONS
+            </h2>
+            <div class="w-full max-w-[300px] mx-auto lg:mx-0">
+              <img
+                src="./images/IMAGE (8).png"
+                alt="WAVE NFT"
+                class="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+          <div class="bg-[#222] p-6 rounded-lg shadow-lg">
+            <div class="space-y-6">
+              <div class="border-b border-gray-700 pb-4">
+                <details
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  class="group rounded-xl p-6 w-full font-family text-[16px] max-w-2xl transition-all duration-300 open:shadow-lg"
+                >
+                  <summary
+                    class="cursor-pointer flex items-center justify-between text-base leading-[150%] text-white font-family select-none"
+                  >
+                    <span>How can I get into Meta RL?</span>
+                    <i
+                      class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300 group-open:rotate-180"
+                    ></i>
+                  </summary>
+                  <div
+                    class="mt-4 space-y-3 text-gray-300 max-h-[250px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent md:max-h-none md:overflow-visible"
+                  >
+                    <p>
+                      1️⃣ You can start by building a strong foundation in
+                      reinforcement learning and machine learning — take courses
+                      on deep RL, replicate open-source projects, and contribute
+                      to AI research communities. Meta looks for people who can
+                      demonstrate real understanding and innovation, not just
+                      theory.
+                    </p>
+                    <p>
+                      2️⃣ Apply through Meta Careers with a solid portfolio —
+                      focus on projects using PyTorch (Meta’s own framework),
+                      publish papers if possible, and show practical RL
+                      applications like game agents or robotics. Networking with
+                      current Meta researchers also helps a lot.
+                    </p>
+                    <p>
+                      3️⃣ Getting into Meta RL isn’t about luck — it’s about
+                      visibility. Share your RL experiments on GitHub, write
+                      posts about your findings, and engage in AI conferences or
+                      online discussions. Meta scouts for people who are both
+                      skilled and active in the community.
+                    </p>
+                  </div>
+                </details>
+              </div>
+              <div class="border-b border-gray-700 pb-4">
+                <details
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                  class="group rounded-xl p-6 w-full font-family text-[16px] max-w-2xl transition-all duration-300 open:shadow-lg"
+                >
+                  <summary
+                    class="cursor-pointer flex items-center justify-between text-base leading-[150%] text-white font-family select-none"
+                  >
+                    <span>When is the NFT launch?</span>
+                    <i
+                      class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300 group-open:rotate-180"
+                    ></i>
+                  </summary>
+                  <div
+                    class="mt-4 space-y-3 text-gray-300 max-h-[250px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent md:max-h-none md:overflow-visible"
+                  >
+                    <p>
+                      1️⃣ Start by learning the basics of reinforcement learning
+                      (RL) — concepts like rewards, policies, and Q-learning.
+                      Then explore Meta’s open research papers on RL and try to
+                      reproduce some experiments using PyTorch.
+                    </p>
+                    <p>
+                      2️⃣ Network with Meta engineers on LinkedIn and contribute
+                      to open-source RL frameworks. Showing initiative and
+                      technical skill can help you get noticed when internship
+                      or research opportunities open.
+                    </p>
+                    <p>
+                      3️⃣ Focus on building a strong portfolio. Create small RL
+                      projects, like game-playing agents or robotics
+                      simulations, and document them on GitHub. Meta looks for
+                      candidates who can show both theory and implementation
+                      skill.
+                    </p>
+                  </div>
+                </details>
+              </div>
+              <div class="pb-4">
+                <details
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  class="group rounded-xl p-6 w-full font-family text-[16px] max-w-2xl transition-all duration-300 open:shadow-lg"
+                >
+                  <summary
+                    class="cursor-pointer flex items-center justify-between text-base leading-[150%] text-white font-family select-none"
+                  >
+                    <span>Where can I get a WAVE NFT?</span>
+                    <i
+                      class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300 group-open:rotate-180"
+                    ></i>
+                  </summary>
+                  <div
+                    class="mt-4 space-y-3 text-gray-300 max-h-[250px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent md:max-h-none md:overflow-visible"
+                  >
+                    <p>
+                      1️⃣ You can mint or buy WAVE NFTs directly from their
+                      official marketplace when drops are live — just make sure
+                      you connect your wallet (like MetaMask) and verify the
+                      contract address to avoid scams.
+                    </p>
+                    <p>
+                      2️⃣ Check secondary NFT platforms such as OpenSea or Blur —
+                      search for “WAVE NFT” collections and look for verified
+                      creators to ensure authenticity before purchasing.
+                    </p>
+                    <p>
+                      3️⃣ Sometimes WAVE NFTs are available only through
+                      exclusive community events or collaborations. Join their
+                      Discord or follow the official Twitter/X account to catch
+                      upcoming airdrops and whitelist opportunities early.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative bg-black text-white py-24 px-4 sm:px-6 lg:px-8">
+        <div
+          class="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <div
+            data-aos="fade-up"
+            data-aos-delay="0"
+            class="flex flex-col items-center text-center space-y-4"
+          >
+            <img
+              src="./images/Frame (11).png"
+              alt="Vania Do"
+              class="w-full max-w-[300px] h-auto rounded-lg shadow-lg grayscale transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+            />
+            <h3
+              class="text-xl font-second-family font-bold uppercase tracking-wider mt-4"
+            >
+              Shaky Lake
+            </h3>
+            <span
+              class="text-xs text-[#8dfd1b] font-family uppercase tracking-wider"
+            >
+              Founder
+            </span>
+            <div class="flex space-x-4 mt-3">
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+              >
+                <img src="./images/Frame.png" alt="" />
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+              >
+                <img src="./images/Frame (13).png" alt="" />
+              </a>
+            </div>
+            <p
+              class="mt-4 text-sm font-third-family w-[70%] text-white leading-relaxed"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="flex flex-col items-center text-center space-y-4"
+          >
+            <img
+              src="./images/Frame (14).png"
+              alt="Vania Do"
+              class="w-full max-w-[300px] h-auto rounded-lg shadow-lg grayscale transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+            />
+            <h3
+              class="text-xl font-second-family font-bold uppercase tracking-wider mt-4"
+            >
+              Baky Hike
+            </h3>
+            <span
+              class="text-xs text-[#8dfd1b] font-family uppercase tracking-wider"
+            >
+              Co-founder
+            </span>
+            <div class="flex space-x-4 mt-3">
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+              >
+                <img src="./images/Frame.png" alt="" />
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+              >
+                <img src="./images/Frame (13).png" alt="" />
+              </a>
+            </div>
+            <p
+              class="mt-4 text-sm font-third-family w-[70%] text-white leading-relaxed"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="flex flex-col items-center text-center space-y-4"
+          >
+            <img
+              src="./images/Frame (12).png"
+              alt="Vania Do"
+              class="w-full max-w-[300px] h-auto rounded-lg shadow-lg grayscale transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+            />
+            <h3
+              class="text-xl font-second-family font-bold uppercase tracking-wider mt-4"
+            >
+              Vania Do
+            </h3>
+            <span
+              class="text-xs text-[#8dfd1b] font-family uppercase tracking-wider"
+            >
+              Producer
+            </span>
+            <div class="flex space-x-4 mt-3">
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+              >
+                <img src="./images/Frame.png" alt="" />
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+              >
+                <img src="./images/Frame (13).png" alt="" />
+              </a>
+            </div>
+            <p
+              class="mt-4 text-sm font-third-family w-[70%] text-white leading-relaxed"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="relative max-w-[1440px] mx-auto w-[90%] bg-black text-white py-24 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div
+            data-aos="fade-up"
+            class="flex flex-col lg:items-start items-center space-y-6"
+          >
+            <h2
+              class="text-3xl sm:text-4xl font-second-family font-bold uppercase tracking-wider leading-tight"
+            >
+              JOIN OUR<br />
+              <span class="text-[#8dfd1b]">DISCORD</span>
+            </h2>
+            <p
+              class="mt-4 text-sm font-third-family lg:text-start text-center text-white leading-relaxed max-w-md"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <a
+              href="https://discord.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center w-fit px-6 py-3 bg-[#8dfd1b] text-black font-family font-bold uppercase tracking-wider rounded transition-transform duration-300 hover:scale-105 hover:bg-green-500"
+            >
+              <i class="fa-brands fa-discord mr-[10px]"></i>
+              Join Discord
+            </a>
+          </div>
+          <div data-aos="fade-up" class="w-full max-w-[400px] mx-auto lg:mx-0">
+            <img
+              src="./images/IMAGE (9).png"
+              alt="WAVE Discord Community"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[#3a0d6b] max-w-[1440px] mx-auto w-full text-white p-[40px_40px] sm:px-6 lg:px-8"
+    >
+      <div
+        class="grid max-w-[1440px] mx-auto w-[90%] grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8"
+      >
+        <!-- Логотип и копирайт -->
+        <div class="flex flex-col space-y-6">
+          <img src="./images/IMAGE.png" alt="Meta RL" class="w-24 h-auto" />
+          <p class="text-xs font-family text-white mt-4">
+            ©2022 All rights reserved
+          </p>
+        </div>
+
+        <!-- Колонка 1 -->
+        <div>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#"
+                class="text-sm font-family hover:text-[#8dfd1b] transition-colors"
+                >Wave NFTs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-sm font-family hover:text-[#8dfd1b] transition-colors"
+                >Stories</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-sm font-family hover:text-[#8dfd1b] transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Колонка 2 -->
+        <div>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#"
+                class="text-sm font-family hover:text-[#8dfd1b] transition-colors"
+                >Licencing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-sm font-family hover:text-[#8dfd1b] transition-colors"
+                >Style Guide</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-sm font-family hover:text-[#8dfd1b] transition-colors"
+                >Changelog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Колонка 3 -->
+        <div>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#"
+                class="text-sm font-family hover:text-[#8dfd1b] transition-colors"
+                >Powered by Webflow</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-sm font-family whitespace-nowrap hover:text-[#8dfd1b] transition-colors"
+                >Developed by Anastasiia G.</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Соцсети -->
+        <div class="flex space-x-4">
+          <a
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame.png" alt="Twitter" />
+          </a>
+          <a
+            href="https://discord.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (1).png" alt="Discord" />
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (2).png" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/Tolko_Nenado"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-125 cursor-pointer"
+          >
+            <img src="./images/Frame (3).png" alt="Telegram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease",
+        once: true,
+        offset: 150,
+      });
+    </script>
+  </body>
+</html>
